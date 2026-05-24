@@ -1,0 +1,82 @@
+.login-body { overflow: hidden; }
+.login-escena {
+  position: relative;
+  height: calc(100vh - var(--header-alto));
+  background: linear-gradient(to bottom, var(--rojo) 0%, var(--naranja) 33%, var(--verde) 66%, var(--azul) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* formulario centrado */
+}
+.login-cohete--detras {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px; /* más grande */
+  z-index: 1;
+  pointer-events: none;
+}
+.login-form {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 28px 36px;
+  border-radius: 8px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.login-cohete--delante {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px; /* mismo tamaño que el de detrás */
+  z-index: 3;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.login-campo { display: flex; flex-direction: column; gap: 5px; }
+.login-label { font-size: 14px; font-weight: 600; color: #333; font-family: 'Inter', sans-serif; }
+.login-input {
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5 !important;
+  outline: none;
+  width: 100%;
+  color: #555;
+}
+.login-input:focus { border-color: var(--rojo) !important; }
+.login-btn {
+  background-color: #111;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  margin-top: 6px;
+  transition: background-color 0.2s ease;
+}
+.login-btn:hover { background-color: var(--rojo); }
+.login-olvide {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  text-decoration: underline !important;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+.login-olvide:hover { color: var(--rojo); }
+.header--rojo { background-color: var(--rojo); border-bottom: none; }
+.header--rojo .logo, .header--rojo .nav-btn { color: white; }
+.header--rojo .nav-icon { filter: brightness(0) invert(1); }
+.header--rojo .nav-btn:hover { background-color: rgba(255,255,255,0.15); }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrolibros - Iniciar sesión</title>
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <style>
+    .header { height: var(--header-alto); }
+    
+    .login-label { font-size: 16px; }
+    .login-input { font-size: 16px; padding: 10px 14px; }
+    .login-btn { font-size: 16px; padding: 12px; }
+    .login-olvide { font-size: 14px; }
+  </style>
+</head>
+<body class="login-body">
+
+  <!-- HEADER -->
+  <header class="header header--rojo">
+    <a href="index.html" class="logo">ASTROLIBROS</a>
+    <nav class="header-nav">
+      <a href="carrito.html" class="nav-btn">
+        <img src="img/cart-icon0.svg" alt="Carrito" class="nav-icon">
+        <span>Carro</span>
+      </a>
+      <a href="login.html" class="nav-btn">
+        <img src="img/cart-icon-container0.svg" alt="Usuario" class="nav-icon">
+        <span>Iniciar sesión</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- FONDO DEGRADADO + CONTENIDO -->
+  <div class="login-escena">
+
+    <!-- Cohete detrás del formulario -->
+    <img src="img/rocket-png-10.png" alt="Cohete" class="login-cohete--detras">
+
+    <!-- Formulario -->
+    <div class="login-form">
+      <div class="login-campo">
+        <label class="login-label">Email</label>
+        <input type="email" class="login-input" placeholder="Value">
+      </div>
+      <div class="login-campo">
+        <label class="login-label">Password</label>
+        <input type="password" class="login-input" placeholder="Value">
+      </div>
+      <button class="login-btn">Sign In</button>
+      <a href="#" class="login-olvide">Forgot password?</a>
+    </div>
+
+    <!-- Cohete delante del formulario (con transparencia) -->
+    <img src="img/rocket-png-10.png" alt="Cohete" class="login-cohete--delante">
+
+  </div>
+
+</body>
+</html>

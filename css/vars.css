@@ -1,0 +1,12 @@
+:root {
+  --color-header-inicio: #ffffff;
+  --color-texto: #000000;
+  --color-texto-claro: #ffffff;
+  --rojo:    #f50000;
+  --naranja: #f56f00;
+  --verde:   #00c400;
+  --azul:    #009393;
+  --header-alto: 70px;
+  --fuente-principal: 'Inter', sans-serif;
+  --fuente-peso-negro: 900;
+}

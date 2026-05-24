@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrolibros - Libros</title>
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/libros.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--rojo">
+    <a href="index.html" class="logo">ASTROLIBROS</a>
+    <nav class="header-nav">
+      <a href="carrito.html" class="nav-btn">
+        <img src="img/cart-icon0.svg" alt="Carrito" class="nav-icon">
+        <span>Carro</span>
+      </a>
+      <a href="login.html" class="nav-btn">
+        <img src="img/cart-icon-container0.svg" alt="Usuario" class="nav-icon">
+        <span>Iniciar sesión</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- CARRUSEL DE DESTACADOS -->
+  <section class="carrusel-seccion">
+    <button class="carrusel-btn carrusel-btn--izq" onclick="moverCarrusel(-1)">&#8249;</button>
+
+    <div class="carrusel-pista" id="carrusel">
+      <!-- Cada tarjeta del carrusel -->
+      <div class="carrusel-item">
+        <img src="img/destacados 1.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 2.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 3.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 4.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 6.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 7.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 8.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 9.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 10.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 11.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+      </div>
+      <div class="carrusel-item">
+        <img src="img/destacados 12.jpg" alt="Narnia">
+        <div class="carrusel-info">
+          <span class="carrusel-titulo">Narnia</span>
+          <span class="carrusel-autor">C.S. Lewis</span>
+        </div>
+    </div>
+    </div>
+
+    <button class="carrusel-btn carrusel-btn--der" onclick="moverCarrusel(1)">&#8250;</button>
+  </section>
+
+  <!-- TÍTULO Y FILTROS -->
+  <section class="libros-cabecera">
+    <h1 class="libros-titulo">LIBROS</h1>
+
+    <div class="filtros">
+      <button class="filtro-btn filtro-btn--activo">PRODUCTS</button>
+      <button class="filtro-btn">LABELS</button>
+      <button class="filtro-btn">NEWS</button>
+      <button class="filtro-btn">CATEGORIES</button>
+      <button class="filtro-btn">NATIONAL</button>
+    </div>
+  </section>
+
+  <!-- CUADRÍCULA DE LIBROS -->
+  <section class="libros-grid">
+
+    <div class="libro-card">
+      <img src="img/destacados 16.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 15.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 14.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 13.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 12.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 11.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 10.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 9.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <img src="img/destacados 8.jpg" alt="Título libro" class="libro-portada">
+      <div class="libro-info">
+        <h2 class="libro-titulo">TITULO</h2>
+        <p class="libro-autor">Autor</p>
+        <p class="libro-editorial">Editorial</p>
+        <p class="libro-desc">Un viaje silencioso entre recuerdos y ciudades imaginadas. Sus páginas se leen como si el tiempo se detuviera — ideal para lectores que buscan calma sin perder intensidad.</p>
+        <p class="libro-precio">$69.000</p>
+        <button class="libro-btn-carro">Agregar al carro</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--rojo">
+    <a href="index.html" class="footer-link">(c) 2026 ASTROLIBROS inc</a>
+  </footer>
+
+  <script src="js/carrusel.js"></script>
+</body>
+</html>
