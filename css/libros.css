@@ -127,5 +127,15 @@
 .footer--verde { background-color: var(--verde); }
 .footer--naranja { background-color: var(--naranja); }
 .footer--azul { background-color: var(--azul); }
-.footer-link { color: white; font-size: 13px; font-weight: 500; text-decoration: none; transition: opacity 0.2s ease; }
-.footer-link:hover { opacity: 0.75; }
+.footer-link {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
