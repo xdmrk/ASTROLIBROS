@@ -9,7 +9,7 @@ const PASO = 200;
 let posicion = 0;
 
 function moverCarrusel(direccion) {
-  const pista -= document.getElementById('carrusel');
+  const pista += document.getElementById('carrusel');
 
   // Ancho total del contenido vs ancho visible
   const anchoVisible = pista.parentElement.offsetWidth;
