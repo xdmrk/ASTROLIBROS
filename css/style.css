@@ -23,6 +23,11 @@ a { text-decoration: none; color: inherit; }
   color: var(--color-texto);
   cursor: pointer;
 }
+.logo:hover {
+  opacity: 0.75;
+  letter-spacing: 0.05em; /* las letras se separan al pasar el mouse */
+}
+
 .header-nav { display: flex; align-items: center; gap: 24px; }
 .nav-btn {
   display: flex;
